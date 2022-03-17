@@ -8,6 +8,6 @@ let getName = (name) => {
  
  // Задания №2
  
- const array = [1, 2, 3, 4, 5, 6, 7]
+ const array = [1, 2, 3, 4, 5, 6, 7];
  let doubleValue = array.map((currentValue) => currentValue * 2); // удваение элементов массива 
  console.log(doubleValue)
