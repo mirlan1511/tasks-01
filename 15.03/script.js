@@ -60,9 +60,9 @@ const goods = [
     }
 ]
 
-const filterPrice = goods.filter(function(price1){
+const filterPrice = goods.filter(function(sort){
     
-    return price1.price < 800;
+    return sort.price < 800;
 }) 
 // создать функцию в котором выбирается элементы < 800
 console.log(filterPrice);
