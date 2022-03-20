@@ -60,11 +60,38 @@ const goods = [
     }
 ]
 
-const filterPrice = goods.filter(function(sort){
+const filterPrice = (goodsArray, price, operator) => {
+    return goodsArray.filter(good => {
+        if (operator === '>'){
+            return good.price  > price;  
+        } else if(operator === '<'){
+            return good.price < price;
+        }
+    })
+}
+
+console.log(filterPrice(goods, 800, '>'));
+
+
+const filter = (arr) => 
+{
+    let group1 = [];
+    let group2 = [];
+
+    for(let i = 0; i < arr.length; i++){
+        if (arr[i].price > 800){
+            group2.push(arr[i].name);
+        }else if(arr[i].price <= 800){
+            group1.push(arr[i].name);
+        }
+    }
     
-    return sort.price < 800;
-}) 
-// создать функцию в котором выбирается элементы < 800
-console.log(filterPrice);
+    return{
+        group1, 
+        group2
+    }
+}
+
+console.log(filter(goods));
 
 
