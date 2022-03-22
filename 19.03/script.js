@@ -6,3 +6,8 @@ let func1 = delay => {
 
 setTimeout(func1, 4000, 4);
 setTimeout(func1, 12000, 8);
+
+// Задания №2
+
+let mul = (n,m) => n * m ;
+console.log(mul(5, 10));
