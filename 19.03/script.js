@@ -15,13 +15,12 @@ console.log(mul(5, 10));
 
 // Задания №3
 
-function faktorial (num)
-    {
+function faktorial (num){
         let result = 1;
-        while (num){
+        while (num) {
         result *= num--;
     }
     return result;
 }
 
-alert(faktorial(7));
+alert('Faktorial 7: ' + faktorial(7));
