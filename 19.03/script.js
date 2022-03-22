@@ -1,3 +1,5 @@
+// Задания №1
+
 let func1 = delay => {
     alert ('Hello ' + delay + ' seconds');
 };
